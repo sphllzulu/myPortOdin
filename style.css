@@ -1,0 +1,228 @@
+.header {
+  background: black;
+  position: relative;
+  width:100%;
+    
+}
+nav {
+  display: flex;
+  width: 80%;
+  margin: 0;
+  /*padding:20px 0;*/
+  text-align-last: right;
+  justify-content: space-between;
+}
+nav ul li {
+  display: inline-block;
+  margin: 10px 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: rgb(136, 39, 39);
+}
+nav ul li a:hover {
+  color: rgb(207, 90, 90);
+}
+nav img {
+  width: 60px;
+  height: auto;
+}
+.details {
+  padding: 0;
+  margin-left: 15%;
+  color: white;
+}
+.details span {
+  color: rgb(136, 39, 39);
+}
+.details h1 {
+  font-size: 50px;
+}
+.details a {
+  background: rgb(136, 39, 39);
+  padding: 10px 10px;
+  font-weight: bold;
+  color: white;
+  display: inline-block;
+  margin: 30px 0;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.image img {
+  position: absolute;
+  width: 20%;
+  height: 80%;
+  bottom: 0;
+  right: 100px;
+  border-radius: 50%;
+  transition: bottom 1s, left 1s;
+  transform: translateX(25%);
+}
+.image:hover img {
+  left: 70%;
+}
+.flex-container {
+  display: flex;
+  
+}
+
+.flex-container img {
+  border: 4px solid rgb(25, 32, 54);
+  border-radius: 5%;
+  height: auto;
+  width: 10%;
+  justify-content: space-between;
+  flex: 1;
+  margin-bottom: 50px;
+}
+.cert {
+  font-weight: bolder;
+  font-size:x-large;
+  text-align: center;
+}
+ /*.quote {
+  width: 100%;
+  margin-top:0;
+  color: #1f2947;
+  font-weight:bold;
+  font-size: xx-large;
+  text-align: center;
+  background-color: #e5e7eb;
+  font-style: italic;
+  }*/
+
+
+.thumbnail {
+  top: -20px;
+  left: -35px;
+  display: block;
+  z-index: 999;
+  cursor: pointer;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+.thumbnail:hover {
+  transform: scale(2);
+}
+.about {
+  padding: 0;
+  margin: 0;
+}
+footer{
+    width:100%;
+    text-align: center;
+    height:50px;
+    background-color: #1f2937;
+}
+footer p{
+    color:white;
+    padding-top:15px;
+}
+/** {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }*/
+  
+  /*body {
+    background-color:rgb(136, 39, 39);
+    font-family: 'Montserrat', sans-serif;}*/
+  
+  
+  .box {
+    background-color: transparent;
+    border-radius: 3px;
+    color: #fff;
+    position: absolute;
+    top: 700px;
+    left: 50%;
+    transform: translate(-60%, -50%);
+    width: 500px;
+    height: 300px;
+    transform-style: preserve-3d;
+    perspective: 1500px;
+    transition: .4s;
+    text-align: center;
+    font-style: italic;
+    font-weight:bold;
+    padding:20px 20px 10px 20px;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      /*border-top: 20px solid #fff;
+      border-left: 20px solid #fff;*/
+      box-sizing: border-box;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-bottom: 20px solid  rgb(136, 39, 39);
+      /*border-right: 20px solid #fff;*/
+      box-sizing: border-box;
+    }
+    .fas {
+      font-size: 25px;
+      height: 50px;
+      width: 50px;
+      line-height: 50px !important;
+      /*background-color: #fff;*/
+      color: #2C3A47;
+    }
+    .fa2 {
+      position: relative;
+      bottom: 0;
+      right: 0;
+      z-index: 1;
+    }
+    .text {
+      position: relative;
+      top: 30px;
+      left: -30px;
+      width: calc(100% + 60px);
+      height: calc(100% - 60px);
+      background-color: #2C3A47;
+      border-radius: 3px;
+      transition: .4s;
+      .fa1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      div {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        text-align: center;
+        width: 100%;
+        padding: 30px 60px;
+        line-height: 1.5;
+        box-sizing: border-box;
+        h3 {
+          font-size: 30px;
+          margin-bottom: 5px;
+        }
+        p {
+          font-size: 15px;
+        }
+      }
+    }
+    &:hover {
+      .text {
+        transform: rotateY(20deg) skewY(-3deg)
+      }
+      transform: translate(-50%, -50%) rotateY(-20deg) skewY(3deg)
+    }
+  }
